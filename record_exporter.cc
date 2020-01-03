@@ -41,6 +41,7 @@ using apollo::cyber::common::GetFileName;
 using namespace std; 
   
 // Define Infinite (Using INT_MAX caused overflow problems) 
+// Polygon related code copied from : https://www.geeksforgeeks.org/how-to-check-if-a-given-point-lies-inside-a-polygon/
 #define INF 10000 
   
 struct Point 
