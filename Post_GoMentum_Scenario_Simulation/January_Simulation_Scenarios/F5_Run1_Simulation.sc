@@ -35,7 +35,7 @@ ego = EgoCar at startPos offset by positionNoise,
                   with target endPos
 
 def Hesitate(self):
-    goal = (self offset by 0 @ 20).toVector()
+    goal = (self offset by 0 @ 8.5).toVector()
     goalElev = simulation().groundElevationAt(goal)
     goalPoint = scenicToLGSVLPosition(goal, y=goalElev)
     startPoint = scenicToLGSVLPosition(self.position, y=self.elevation)

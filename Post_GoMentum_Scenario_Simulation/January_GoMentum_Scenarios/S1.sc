@@ -35,7 +35,7 @@ ego = EgoCar at startPos offset by positionNoise,
                   with target endPos
 
 def Hesitate(self):
-    goal = (self offset by 10 @ 20).toVector()
+    goal = (self offset by 0 @ 8.5).toVector()
     goalElev = simulation().groundElevationAt(goal)
     goalPoint = scenicToLGSVLPosition(goal, y=goalElev)
     startPoint = scenicToLGSVLPosition(self.position, y=self.elevation)
@@ -58,9 +58,9 @@ def Hesitate(self):
 ped = Pedestrian at 19.782 @ 225.680,
            facing 90 deg relative to roadDirection,
            with behavior Hesitate,
-           with startDelay 8.15,
-           with walkDistance 6.88,
-           with hesitateTime 3.11,
+           with startDelay 7.6354,
+           with walkDistance 6.8819,
+           with hesitateTime 2.8454,
            with resumeForward True,
            with regionContainedIn everywhere,   # allow pedestrian to be anywhere
            with requireVisible False
