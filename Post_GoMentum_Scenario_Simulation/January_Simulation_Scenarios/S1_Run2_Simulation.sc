@@ -22,8 +22,8 @@ def DriveTo(target):
         invoke DoForever(action)
     return behavior
 
-startPos = 38.6 @ 183.9
-endPos = 40 @ 225.2
+startPos = 41.59375 @ 181.211319
+endPos = 33.46875 @ 225.0369263
 positionNoise = 0@0
 #positionNoise = Normal(0, 0.1) @ Normal(0, 0.1)
 
@@ -55,7 +55,7 @@ def Hesitate(self):
 
     invoke DoForever(hesitationAction)
 
-ped = Pedestrian at 19.782 @ 225.680,
+ped = Pedestrian at 16.8125 @ 223.7737732,
            facing 90 deg relative to roadDirection,
            with behavior Hesitate,
            with startDelay 8.15,
